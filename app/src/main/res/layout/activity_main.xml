@@ -189,7 +189,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:layout_marginStart="@dimen/d140dp"
+            android:layout_marginStart="@dimen/d149dp"
             android:layout_alignBottom="@+id/federal"
             android:layout_alignParentEnd="true">
 
@@ -204,9 +204,11 @@
             android:layout_below="@id/spinnerfederal"
             android:layout_marginStart="@dimen/fab_margin"
             android:layout_marginTop="@dimen/d30dp"
-            android:text="Fotografía:" />
+            android:text="@string/textview_fotografia" />
 
 
+        <!--LINEAR LAYOUT empleado para poder poner los botones uno a lado del otro
+            estos botones son los de tomar foto y seleccionar la foto de la galeria-->
         <LinearLayout
             android:id="@+id/linear"
             android:layout_width="wrap_content"
@@ -220,24 +222,28 @@
                 android:id="@+id/take_thephoto"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Tomar Foto"/>
+                android:text="@string/button_tomarfoto"/>
 
             <Button
                 android:id="@+id/select_thephoto"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Seleccionar Foto"/>
+                android:text="@string/button_seleccionarfoto"/>
 
 
 
         </LinearLayout>
 
+        <!--IMAGENVIEW en el cual aparecerá a imagen ya sea tomada o seleccionada de la galeria-->
         <ImageView
             android:id="@+id/imageview_photo"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
+            android:contentDescription="@string/contentdescripcion_imagen"
             android:layout_below="@id/linear"/>
+
+
         <!--Button que establece el texto calcular/calculate y al darle clic a este se podrán
             pasar los datos a la siguiente activity -->
 

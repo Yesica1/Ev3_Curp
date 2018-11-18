@@ -1,6 +1,7 @@
 <resources>
     <!--Dimensiones utilizadas para margenes o paddings segun se requiera-->
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="d5dp">5dp</dimen>
     <dimen name="d80dp">80dp</dimen>
     <dimen name="d10dp">10dp</dimen>
     <dimen name="d18dp">18dp</dimen>
@@ -11,9 +12,10 @@
     <dimen name="d40dp">40dp</dimen>
     <dimen name="d50dp">50dp</dimen>
     <dimen name="d95dp">95dp</dimen>
+    <dimen name="d100dp">100dp</dimen>
     <dimen name="d101dp">101dp</dimen>
     <dimen name="d120dp">120dp</dimen>
-    <dimen name="d140dp">145dp</dimen>
+    <dimen name="d149dp">149dp</dimen>
     <dimen name="d150dp">150dp</dimen>
     <dimen name="d180dp">180dp</dimen>
     <dimen name="d185dp">185dp</dimen>

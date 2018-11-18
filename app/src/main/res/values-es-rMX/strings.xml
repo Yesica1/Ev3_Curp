@@ -28,6 +28,10 @@
         <string name="hint_mm">mm</string>
         <string name="hint_dd">dd</string>
         <string name="hint_yyyy">yyyy</string>
+        <string name="textview_fotografia">Fotografía: </string>
+        <string name="button_tomarfoto">Tomar Foto</string>
+        <string name="button_seleccionarfoto">Seleccionar Foto</string>
+        <string name="contentdescripcion_imagen">Imagen seleccionada por el usuario</string>
         <string name="title_activity_lista_usuario_recycler"> Información Curp </string>
         <!--Arreglo de Strings de cada una de las entidades federativass que el usuario puede elegir si asi lo desea.-->
         <string-array name="entidades_fededrativas">

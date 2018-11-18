@@ -6,18 +6,12 @@
 
     <ImageView
         android:id="@+id/image_view_user"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="5dp"
+        android:layout_width="@dimen/d100dp"
+        android:layout_height="@dimen/d100dp"
+        android:layout_marginStart="@dimen/d5dp"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="@dimen/d80dp" />
-
-   <!-- <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/image_view_user"
-        android:orientation="vertical">
-    -->
+        android:layout_marginTop="@dimen/d80dp"
+        android:contentDescription="@string/contentdescripcion_imagen"/>
 
     <!--TextView del texto nombres/Names -->
     <TextView
@@ -38,7 +32,7 @@
         android:layout_marginStart="@dimen/d10dp"
         android:layout_alignTop="@+id/infoname"
         android:textColor="@color/colorBlack"
-        android:layout_toRightOf="@id/infoname"
+        android:layout_toEndOf="@id/infoname"
         android:textSize="@dimen/text10sp" />
 
     <!--TextView del texto First Last Name/Apellido Paterno -->
@@ -60,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/d10dp"
         android:layout_alignBaseline="@id/infofirstlastname"
-        android:layout_toRightOf="@id/infofirstlastname"
+        android:layout_toEndOf="@id/infofirstlastname"
         android:textColor="@color/colorBlack"
         android:textSize="@dimen/text10sp" />
 
@@ -83,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/d10dp"
         android:layout_alignBaseline="@id/infosecondlastname"
-        android:layout_toRightOf="@id/infosecondlastname"
+        android:layout_toEndOf="@id/infosecondlastname"
         android:textSize="@dimen/text10sp"
         android:textColor="@color/colorBlack"/>
 
@@ -106,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/d10dp"
         android:layout_alignBaseline="@id/infogender"
-        android:layout_toRightOf="@id/infogender"
+        android:layout_toEndOf="@id/infogender"
         android:textSize="@dimen/text10sp"
         android:textColor="@color/colorBlack"/>
 
@@ -129,7 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/d10dp"
         android:layout_alignBaseline="@id/infobirthday"
-        android:layout_toRightOf="@id/infobirthday"
+        android:layout_toEndOf="@id/infobirthday"
         android:textSize="@dimen/text10sp"
         android:textColor="@color/colorBlack"/>
 
@@ -152,7 +146,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/d10dp"
         android:layout_alignBaseline="@id/infoentity"
-        android:layout_toRightOf="@id/infoentity"
+        android:layout_toEndOf="@id/infoentity"
         android:textSize="@dimen/text10sp"
         android:textColor="@color/colorBlack"/>
 
@@ -177,7 +171,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/d10dp"
         android:layout_alignBaseline="@id/infogeneracionCurp"
-        android:layout_toRightOf="@id/infogeneracionCurp"
+        android:layout_toEndOf="@id/infogeneracionCurp"
         android:textColor="@color/colorPink"
         android:textSize="@dimen/text10sp"
         android:layout_marginBottom="@dimen/d20dp"/>

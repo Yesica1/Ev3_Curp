@@ -1,6 +1,6 @@
 package com.example.vostro.ev3_curp.DataBase;
 
-import android.content.ContentUris;
+
 import android.provider.BaseColumns;
 
 public final class UsuarioContract

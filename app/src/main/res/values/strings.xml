@@ -24,6 +24,10 @@
     <string name="hint_mm">mm</string>
     <string name="hint_dd">dd</string>
     <string name="hint_yyyy">yyyy</string>
+    <string name="textview_fotografia">Photography: </string>
+    <string name="button_tomarfoto">Take photo</string>
+    <string name="button_seleccionarfoto">Select photo</string>
+    <string name="contentdescripcion_imagen">Selected image from user</string>
     <string name="title_activity_lista_usuario_recycler">Curp Information </string>
 
 
@@ -60,7 +64,6 @@
         <item>Yucatán</item>
         <item>Zacatecas</item>
     </string-array>
-    <string name="title_activity_lista_usuario_recylcer">ListaUsuarioRecylcer</string>
 
 
 </resources>

@@ -150,9 +150,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-        final Button tomar_foto = (Button) findViewById(R.id.take_thephoto);
+        Button tomar_foto = (Button) findViewById(R.id.take_thephoto);
         tomar_foto.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -161,20 +159,10 @@ public class MainActivity extends AppCompatActivity {
                         capturar_foto);
 
                 }
-/**
-
- Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
- if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
- startActivityForResult(takePictureIntent, capturar_foto);
- }
-
- }**/
 
         });
 
-
     }
-
 
          public void onActivityResult(int requestCode, int resultCode, Intent data)
          {
@@ -196,12 +184,6 @@ public class MainActivity extends AppCompatActivity {
                      imagenUrl = String.valueOf(path_image);
 
                      }
-                         /**
-                          *
-                          Bundle extras = data.getExtras();
-                          Bitmap imageBitmap = (Bitmap) extras.get("data");
-                          imageview_photo.setImageBitmap(imageBitmap);
-                          imagenUrl = BitMapToString(imageBitmap); **/
 
              } catch(Exception e)
                 {
@@ -209,30 +191,7 @@ public class MainActivity extends AppCompatActivity {
                 }
          }
 
-/**
-    public String BitMapToString(Bitmap bitmap){
-        ByteArrayOutputStream baos=new  ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG,100, baos);
-        byte [] b=baos.toByteArray();
-        String temp=Base64.encodeToString(b, Base64.DEFAULT);
-        return temp;
-    }
 
-
-    public static String BitmapToString(Bitmap bitmap) {
-        try {
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
-            byte[] b = baos.toByteArray();
-            String temp = Base64.encodeToString(b, Base64.DEFAULT);
-            return temp;
-        } catch (NullPointerException e) {
-            return null;
-        } catch (OutOfMemoryError e) {
-            return null;
-        }
-    }
-**/
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

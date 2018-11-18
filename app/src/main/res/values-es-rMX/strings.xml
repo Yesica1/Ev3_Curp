@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!--String por default en Idioma de Español Mexico el cual aparecerá si el usuario tiene configurado su telefono con el idioma a Español México
+    pero es importante notar que no todos los celulares Android tienen la opcion de Español México si no, Español Estados Unidos, Español España
+    entre otros.-->
+
+    <resources>
+        <string name="app_name">Ev3_Curp</string>
+        <string name="action_settings">Cerrar Sesión</string>
+        <string name="action_show">Mostrar Datos</string>
+        <string name="action_return">Regresar e ingresar datos</string>
+        <string name="ContentDescp_Logo">Logo Oficial del CURP,tiene un color verde y una figura blanca en medio.</string>
+        <string name="ContentDesc_imagen">Imagen que muestra el nombre CURP y personas cercas</string>
+        <string name="textview_titulo"> Consulta tu  CURP </string>
+        <string name="textview_nombre"> Nombres:  </string>
+        <string name="textview_apellidomaterno">Apellido Materno:  </string>
+        <string name="textview_apellidopaterno">Apellido Paterno: </string>
+        <string name="textview_genero">Género: </string>
+        <string name="textview_masculino">Masculino </string>
+        <string name="textview_femenino">Femenino </string>
+        <string name="textview_fechanacimiento">Fecha de nacimiento: </string>
+        <string name="textview_entidadfederativa">Entidad Federal: </string>
+        <string name="button_save">Guardar</string>
+        <string name="title_main2">INFORMACIÓN DEL CURP </string>
+        <string name="generate_CURP">SU CURP ES: </string>
+        <string name="hint_displaydate">Click para seleccionar la fecha</string>
+        <string name="hint_mm">mm</string>
+        <string name="hint_dd">dd</string>
+        <string name="hint_yyyy">yyyy</string>
+        <string name="title_activity_lista_usuario_recycler"> Información Curp </string>
+        <!--Arreglo de Strings de cada una de las entidades federativass que el usuario puede elegir si asi lo desea.-->
+        <string-array name="entidades_fededrativas">
+            <item>Aguascalientes</item>
+            <item>Baja California Sur</item>
+            <item>Baja California</item>
+            <item>Campeche</item>
+            <item>Chiapas</item>
+            <item>Chihuahua</item>
+            <item>Coahuila de Zaragoza </item>
+            <item>Colima</item>
+            <item>Cuidad de México</item>
+            <item>Durango</item>
+            <item>Guanajuato</item>
+            <item>Guerrero</item>
+            <item>Hidalgo</item>
+            <item>Jalisco</item>
+            <item>Michoacan de Ocampo</item>
+            <item>Morelos</item>
+            <item>Nayarit</item>
+            <item>Nuevo León</item>
+            <item>Oaxaca</item>
+            <item>Puebla</item>
+            <item>Querétaro</item>
+            <item>Quintana Roo</item>
+            <item>San Luis Potosí</item>
+            <item>Sinaloa</item>
+            <item>Tabasco</item>
+            <item>Tamaulipas</item>
+            <item>Tlaxcala</item>
+            <item>Veracruz</item>
+            <item>Yucatán</item>
+            <item>Zacatecas</item>
+        </string-array>
+
+</resources>

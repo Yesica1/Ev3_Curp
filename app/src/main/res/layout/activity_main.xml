@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!--PRIMER TextView para el título Conoce tu CURP /Consult your CURP  -->
+        <TextView
+            android:id="@+id/titleCURP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d80dp"
+            android:text="@string/textview_titulo"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:textSize="@dimen/text25sp" />
+
+
+        <!--TextInputLayout y TextInputEditText referente a los Nombres / Names
+            que el usuario debe de ingresar, este será de forma dinámica-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleCURP"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/d30dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ET_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/textview_nombre"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--TextInputLayout y TextInputEditText referente al First LastName/Primer Apellido/
+           Apellido Paterno que el usuario debe de ingresar, este será de forma dinámica-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/firstLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Names"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/d10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ET_firstlastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/textview_apellidopaterno"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!--TextInputLayout y TextInputEditText referente al Second LastName/Segundo Apellido/
+           Apellido Materno que el usuario debe de ingresar, este será de forma dinámica-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/secondLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstLastName"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/d10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ET_secondlastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/textview_apellidomaterno" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--RADIO BUTTON para establecer el Genero del usuario-->
+
+        <!--TextView con el nombre de genero/gender-->
+        <TextView
+            android:id="@+id/genero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondLastName"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/d35dp"
+            android:text="@string/textview_genero"
+            android:textSize="@dimen/text18sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d120dp"
+            android:layout_marginTop="@dimen/d20dp"
+            android:layout_below="@+id/secondLastName">
+            <!--RadioButton Masculine/ Masculino-->
+            <RadioButton
+                android:id="@+id/generoMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_masculino" />
+            <!--RadioButton Feminine/ Femenino-->
+            <RadioButton
+                android:id="@+id/generoFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_femenino" />
+
+        </RadioGroup>
+
+        <!--TextView con el nombre de Fecha de nacimiento/Birthdate-->
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genero"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/d40dp"
+            android:text="@string/textview_fechanacimiento"
+            android:textSize="@dimen/text18sp" />
+
+
+        <EditText
+            android:id="@+id/mes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/d25dp"
+            android:layout_alignBaseline="@+id/birthday"
+            android:layout_toEndOf="@id/birthday"
+            android:inputType="number"
+            android:hint="@string/hint_mm" />
+
+        <EditText
+            android:id="@+id/dia"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/birthday"
+            android:layout_toEndOf="@+id/mes"
+            android:inputType="number"
+            android:hint="@string/hint_dd" />
+
+        <EditText
+            android:id="@+id/año"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/dia"
+            android:layout_alignBaseline="@+id/birthday"
+            android:inputType="number"
+            android:hint="@string/hint_yyyy" />
+
+
+        <!--TextView con el nombre de federal entity / entidada federal-->
+        <TextView
+            android:id="@+id/federal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text18sp"
+            android:layout_below="@id/birthday"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/d30dp"
+            android:text="@string/textview_entidadfederativa"
+            />
+
+        <!--Caracteristicas del Spinner en base a cada una de las entidades federales
+            de México-->
+        <Spinner
+            android:id="@+id/spinnerfederal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/d140dp"
+            android:layout_alignBottom="@+id/federal"
+            android:layout_alignParentEnd="true">
+
+        </Spinner>
+
+        <!--TextView con el nombre de Fotografia -->
+        <TextView
+            android:id="@+id/text_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text18sp"
+            android:layout_below="@id/spinnerfederal"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/d30dp"
+            android:text="Fotografía:" />
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/text_foto">
+
+
+            <Button
+                android:id="@+id/take_thephoto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Tomar Foto"/>
+
+            <Button
+                android:id="@+id/select_thephoto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Seleccionar Foto"/>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageview_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linear"/>
+        <!--Button que establece el texto calcular/calculate y al darle clic a este se podrán
+            pasar los datos a la siguiente activity -->
+
+        <Button
+            android:id="@+id/BT_Calcu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/d18dp"
+            android:layout_marginLeft="@dimen/d18dp"
+            android:layout_below="@id/imageview_photo"
+            android:layout_marginTop="@dimen/d20dp"
+            android:text="@string/button_save"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

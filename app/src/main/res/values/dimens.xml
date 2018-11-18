@@ -1,0 +1,32 @@
+<resources>
+    <!--Dimensiones utilizadas para margenes o paddings segun se requiera-->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="d80dp">80dp</dimen>
+    <dimen name="d10dp">10dp</dimen>
+    <dimen name="d18dp">18dp</dimen>
+    <dimen name="d20dp">20dp</dimen>
+    <dimen name="d25dp">25dp</dimen>
+    <dimen name="d30dp">30dp</dimen>
+    <dimen name="d35dp">35dp</dimen>
+    <dimen name="d40dp">40dp</dimen>
+    <dimen name="d50dp">50dp</dimen>
+    <dimen name="d95dp">95dp</dimen>
+    <dimen name="d101dp">101dp</dimen>
+    <dimen name="d120dp">120dp</dimen>
+    <dimen name="d140dp">145dp</dimen>
+    <dimen name="d150dp">150dp</dimen>
+    <dimen name="d180dp">180dp</dimen>
+    <dimen name="d185dp">185dp</dimen>
+    <dimen name="d195dp">195dp</dimen>
+    <dimen name="d460dp">460dp</dimen>
+    <dimen name="d200dp">500dp</dimen>
+
+    <!--Dimensiones utilizadas para textsize ya que son sp-->
+    <dimen name="text10sp">14sp</dimen>
+    <dimen name="text15sp">15sp</dimen>
+    <dimen name="text18sp">18sp</dimen>
+    <dimen name="text25sp">25sp</dimen>
+    <dimen name="text20sp">20sp</dimen>
+
+
+</resources>

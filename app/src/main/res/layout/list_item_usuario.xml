@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_view_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/d80dp" />
+
+   <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/image_view_user"
+        android:orientation="vertical">
+    -->
+
+    <!--TextView del texto nombres/Names -->
+    <TextView
+        android:id="@+id/infoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_nombre"
+        android:layout_marginTop="@dimen/d25dp"
+        android:textSize="@dimen/text10sp"
+        android:layout_toEndOf="@id/image_view_user"
+        android:layout_marginStart="@dimen/d10dp"/>
+
+    <!--TextView donde se mostrará los nombres que el usuario haya ingresado -->
+    <TextView
+        android:id="@+id/txt_names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d10dp"
+        android:layout_alignTop="@+id/infoname"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@id/infoname"
+        android:textSize="@dimen/text10sp" />
+
+    <!--TextView del texto First Last Name/Apellido Paterno -->
+    <TextView
+        android:id="@+id/infofirstlastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoname"
+        android:layout_marginTop="@dimen/d10dp"
+        android:text="@string/textview_apellidopaterno"
+        android:textSize="@dimen/text10sp"
+        android:layout_toEndOf="@id/image_view_user"
+        android:layout_marginStart="@dimen/d20dp"/>
+
+    <!--TextView donde se mostrará el apellido paterno ingresado por el usuario -->
+    <TextView
+        android:id="@+id/txt_firstLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d10dp"
+        android:layout_alignBaseline="@id/infofirstlastname"
+        android:layout_toRightOf="@id/infofirstlastname"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text10sp" />
+
+    <!--TextView del texto Second Last Name / Apellido Materno -->
+    <TextView
+        android:id="@+id/infosecondlastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infofirstlastname"
+        android:layout_marginTop="@dimen/d10dp"
+        android:text="@string/textview_apellidomaterno"
+        android:textSize="@dimen/text10sp"
+        android:layout_toEndOf="@id/image_view_user"
+        android:layout_marginStart="@dimen/d20dp"/>
+
+    <!--TextView donde se mostrará el apellido materno ingresado por el usuario -->
+    <TextView
+        android:id="@+id/txt_secondLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d10dp"
+        android:layout_alignBaseline="@id/infosecondlastname"
+        android:layout_toRightOf="@id/infosecondlastname"
+        android:textSize="@dimen/text10sp"
+        android:textColor="@color/colorBlack"/>
+
+    <!--TextView del texto gender/género -->
+    <TextView
+        android:id="@+id/infogender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infosecondlastname"
+        android:layout_marginTop="@dimen/d10dp"
+        android:text="@string/textview_genero"
+        android:textSize="@dimen/text10sp"
+        android:layout_toEndOf="@id/image_view_user"
+        android:layout_marginStart="@dimen/d20dp"/>
+
+    <!--TextView donde se mostrará el genero ingresado por el usuario -->
+    <TextView
+        android:id="@+id/txt_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d10dp"
+        android:layout_alignBaseline="@id/infogender"
+        android:layout_toRightOf="@id/infogender"
+        android:textSize="@dimen/text10sp"
+        android:textColor="@color/colorBlack"/>
+
+    <!--TextView del texto birthday / fecha de nacimiento -->
+    <TextView
+        android:id="@+id/infobirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infogender"
+        android:layout_marginTop="@dimen/d10dp"
+        android:text="@string/textview_fechanacimiento"
+        android:textSize="@dimen/text10sp"
+        android:layout_toEndOf="@id/image_view_user"
+        android:layout_marginStart="@dimen/d20dp"/>
+
+    <!--TextView donde se almacenaará la fecha de nacimiento ingresada por el usuario -->
+    <TextView
+        android:id="@+id/txt_datebirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d10dp"
+        android:layout_alignBaseline="@id/infobirthday"
+        android:layout_toRightOf="@id/infobirthday"
+        android:textSize="@dimen/text10sp"
+        android:textColor="@color/colorBlack"/>
+
+    <!--TextView del texto federal entity/entidad federativa -->
+    <TextView
+        android:id="@+id/infoentity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infobirthday"
+        android:layout_marginTop="@dimen/d10dp"
+        android:text="@string/textview_entidadfederativa"
+        android:textSize="@dimen/text15sp"
+        android:layout_toEndOf="@id/image_view_user"
+        android:layout_marginStart="@dimen/text10sp"/>
+
+    <!--TextView donde se almacenará la entidad federativa ingresada por el usuario -->
+    <TextView
+        android:id="@+id/txt_entidad_federativa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d10dp"
+        android:layout_alignBaseline="@id/infoentity"
+        android:layout_toRightOf="@id/infoentity"
+        android:textSize="@dimen/text10sp"
+        android:textColor="@color/colorBlack"/>
+
+    <!--TextView del texto Your CURP is / Tu CURP es -->
+    <TextView
+        android:id="@+id/infogeneracionCurp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoentity"
+        android:layout_marginTop="@dimen/d10dp"
+        android:text="@string/generate_CURP"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text10sp"
+        android:layout_toEndOf="@id/image_view_user"
+        android:layout_marginStart="@dimen/d20dp"/>
+
+    <!--TextView donde aparecerá el CURP generado en base a los datos que el usuario
+        ingreso-->
+    <TextView
+        android:id="@+id/txt_curp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d10dp"
+        android:layout_alignBaseline="@id/infogeneracionCurp"
+        android:layout_toRightOf="@id/infogeneracionCurp"
+        android:textColor="@color/colorPink"
+        android:textSize="@dimen/text10sp"
+        android:layout_marginBottom="@dimen/d20dp"/>
+
+
+    <!--</LinearLayout> -->
+</RelativeLayout>

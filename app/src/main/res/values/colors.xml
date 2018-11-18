@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Se cambiaron y agregaron diversos colores con el objetivo de modificar la aplicacion
+   segun se requiera-->
+    <color name="colorPrimary">#4CB24C</color>
+    <color name="colorPrimaryDark">#339933</color>
+    <color name="colorAccent">#267226</color>
+    <color name="colorPink">#FF4081</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlueDarker">#303F9F</color>
+    <color name="colorBlue">#3F51B5</color>
+</resources>

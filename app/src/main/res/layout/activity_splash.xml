@@ -1,0 +1,24 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySplash">
+
+
+
+    <!--Image VIew de la imagen principal que aparecerá al iniciar la aplicacion -->
+    <ImageView
+        android:id="@+id/imageSplash"
+        android:layout_width="@dimen/d195dp"
+        android:layout_height="@dimen/d460dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logocurp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/ContentDescp_Logo"/>
+
+
+
+</RelativeLayout>

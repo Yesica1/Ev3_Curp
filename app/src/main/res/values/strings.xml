@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">Ev3_Curp</string>
+    <string name="action_settings">Sign Off</string>
+    <string name="action_show">Show Data</string>
+    <string name="action_return">Return and enter data</string>
+    <string name="ContentDescp_Logo">Official Logo of CURP, it is color is green and it has a white figure in the middle.</string>
+    <string name="ContentDesc_imagen">Image that shows the name Curp and people with a close up</string>
+    <string name="textview_titulo"> Consult your CURP </string>
+    <string name="textview_nombre"> Names:  </string>
+    <string name="textview_apellidomaterno">Second last name: </string>
+    <string name="textview_apellidopaterno">First last name: </string>
+    <string name="textview_genero">Gender: </string>
+    <string name="textview_masculino">Masculine </string>
+    <string name="textview_femenino">Feminine </string>
+    <string name="textview_fechanacimiento">Birthdate: </string>
+    <string name="textview_entidadfederativa">Federal Entity: </string>
+    <string name="button_save">Save</string>
+    <string name="title_main2">CURP INFORMATION </string>
+    <string name="generate_CURP">YOUR CURP IS:</string>
+    <string name="hint_displaydate">Click here to select date</string>
+    <string name="hint_mm">mm</string>
+    <string name="hint_dd">dd</string>
+    <string name="hint_yyyy">yyyy</string>
+    <string name="title_activity_lista_usuario_recycler">Curp Information </string>
+
+
+    <!--Arreglo de Strings de cada una de las entidades federativass que el usuario puede elegir si asi lo desea.-->
+    <string-array name="entidades_fededrativas">
+        <item>Aguascalientes</item>
+        <item>Baja California Sur</item>
+        <item>Baja California</item>
+        <item>Campeche</item>
+        <item>Chiapas</item>
+        <item>Chihuahua</item>
+        <item>Coahuila de Zaragoza </item>
+        <item>Colima</item>
+        <item>Cuidad de México</item>
+        <item>Durango</item>
+        <item>Guanajuato</item>
+        <item>Guerrero</item>
+        <item>Hidalgo</item>
+        <item>Jalisco</item>
+        <item>Michoacan de Ocampo</item>
+        <item>Morelos</item>
+        <item>Nayarit</item>
+        <item>Nuevo León</item>
+        <item>Oaxaca</item>
+        <item>Puebla</item>
+        <item>Querétaro</item>
+        <item>Quintana Roo</item>
+        <item>San Luis Potosí</item>
+        <item>Sinaloa</item>
+        <item>Tabasco</item>
+        <item>Tamaulipas</item>
+        <item>Tlaxcala</item>
+        <item>Veracruz</item>
+        <item>Yucatán</item>
+        <item>Zacatecas</item>
+    </string-array>
+    <string name="title_activity_lista_usuario_recylcer">ListaUsuarioRecylcer</string>
+
+
+</resources>

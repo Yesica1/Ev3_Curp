@@ -230,8 +230,6 @@
                 android:layout_height="match_parent"
                 android:text="@string/button_seleccionarfoto"/>
 
-
-
         </LinearLayout>
 
         <!--IMAGENVIEW en el cual aparecerá a imagen ya sea tomada o seleccionada de la galeria-->

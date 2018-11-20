@@ -45,7 +45,7 @@
         android:text="@string/textview_apellidopaterno"
         android:textSize="@dimen/text10sp"
         android:layout_toEndOf="@id/image_view_user"
-        android:layout_marginStart="@dimen/d20dp"/>
+        android:layout_marginStart="@dimen/d10dp"/>
 
     <!--TextView donde se mostrará el apellido paterno ingresado por el usuario -->
     <TextView
@@ -68,7 +68,7 @@
         android:text="@string/textview_apellidomaterno"
         android:textSize="@dimen/text10sp"
         android:layout_toEndOf="@id/image_view_user"
-        android:layout_marginStart="@dimen/d20dp"/>
+        android:layout_marginStart="@dimen/d10dp"/>
 
     <!--TextView donde se mostrará el apellido materno ingresado por el usuario -->
     <TextView
@@ -91,7 +91,7 @@
         android:text="@string/textview_genero"
         android:textSize="@dimen/text10sp"
         android:layout_toEndOf="@id/image_view_user"
-        android:layout_marginStart="@dimen/d20dp"/>
+        android:layout_marginStart="@dimen/d10dp"/>
 
     <!--TextView donde se mostrará el genero ingresado por el usuario -->
     <TextView
@@ -114,7 +114,7 @@
         android:text="@string/textview_fechanacimiento"
         android:textSize="@dimen/text10sp"
         android:layout_toEndOf="@id/image_view_user"
-        android:layout_marginStart="@dimen/d20dp"/>
+        android:layout_marginStart="@dimen/d10dp"/>
 
     <!--TextView donde se almacenaará la fecha de nacimiento ingresada por el usuario -->
     <TextView
@@ -137,7 +137,7 @@
         android:text="@string/textview_entidadfederativa"
         android:textSize="@dimen/text15sp"
         android:layout_toEndOf="@id/image_view_user"
-        android:layout_marginStart="@dimen/text10sp"/>
+        android:layout_marginStart="@dimen/d10dp"/>
 
     <!--TextView donde se almacenará la entidad federativa ingresada por el usuario -->
     <TextView
@@ -161,7 +161,7 @@
         android:textColor="@color/colorBlack"
         android:textSize="@dimen/text10sp"
         android:layout_toEndOf="@id/image_view_user"
-        android:layout_marginStart="@dimen/d20dp"/>
+        android:layout_marginStart="@dimen/d10dp"/>
 
     <!--TextView donde aparecerá el CURP generado en base a los datos que el usuario
         ingreso-->
@@ -177,5 +177,4 @@
         android:layout_marginBottom="@dimen/d20dp"/>
 
 
-    <!--</LinearLayout> -->
 </RelativeLayout>

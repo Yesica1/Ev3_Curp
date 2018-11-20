@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        /*Boton para seleccionar la foto de la galeria del usuario, la variable seleccionar_imgen se declaron anteriormente*/
         Button select_thephoto = (Button) findViewById(R.id.select_thephoto);
         select_thephoto.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -150,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        /*Boton para tomar la foto, la variable capturar_foto se declaron anteriormente*/
         Button tomar_foto = (Button) findViewById(R.id.take_thephoto);
         tomar_foto.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -163,7 +164,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
+        /**Es aqui donde se podrá validar las variables seleccionar_imagen y capturar_foto para asi poder guardar el
+         * path de la imagen en un string y poderlo desplegar en un ImageView y dicha variable podderla mandar al otro activity*/
          public void onActivityResult(int requestCode, int resultCode, Intent data)
          {
 

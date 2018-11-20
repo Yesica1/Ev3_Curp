@@ -1,7 +1,5 @@
 package com.example.vostro.ev3_curp.Adapter;
 
-import android.content.Context;
-
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -17,7 +15,7 @@ import java.util.ArrayList;
 public class ListaUsuarioAdapter extends RecyclerView.Adapter<ListaUsuarioAdapter.UsuarioViewHolder>
 {
     ArrayList<Usuario> listaUsuario;
-    Context context;
+
 
     public ListaUsuarioAdapter(ArrayList<Usuario> listaUsuario) {
         this.listaUsuario = listaUsuario;
